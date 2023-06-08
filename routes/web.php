@@ -39,5 +39,6 @@ Route::get('/search','UsersController@index');
 Route::get('/follow-list','PostsController@index');
 Route::get('/follower-list','PostsController@index');
 
-
+Route::get('/post','PostsController@create')->name('post.create');
+Route::post('/post','PostsController@store')->name('post.store');
 
